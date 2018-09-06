@@ -37,10 +37,10 @@ def ert_idx(pos):
                 b.append(a[i])
         n = 2 * n
     del a
-    return(b[pos])
+    return(b[pos-1])
 
 
-print('Простое число под номером {} равняется'.format(idx),ert_idx(idx)-1)
+print('Простое число под номером {} равняется'.format(idx),ert_idx(idx))
 
 
 #cProfile.run('ert_idx(10000)')
